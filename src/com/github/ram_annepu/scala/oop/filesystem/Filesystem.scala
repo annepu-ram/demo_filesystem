@@ -9,7 +9,7 @@ object Filesystem extends App { //App is a utility class which already has main 
 
   val root = Directory.ROOT
   var state = State(root,root)//whenever we make stateful changes we make use of vars
-  //because we are changing a state and storing the intermmitent
+  //because we are changing a state and storing the intermittent state
   val scanner = new Scanner(System.in)
 
   while(true) {
