@@ -12,7 +12,7 @@ class State (val root:Directory, val wd:  Directory, val output: String){ //hold
     State(root, wd, message)
 }
 
-object State{
+object State{ //state factory object
   val SHELL_TOKEN = "$ "
   def apply(root: Directory, wd:Directory, output: String = ""): State =
     new State(root,wd,output)
